@@ -1,0 +1,15 @@
+﻿@model eStoreClient.Models.Product
+
+<h1>Edit Product</h1>
+<form method="post">
+    <input type="hidden" name="ProductId" value="@Model.ProductId" />
+    <label>Product Name:</label>
+    <input type="text" name="ProductName" value="@Model.ProductName" required />
+    <label>Category:</label>
+    <input type="text" name="Category" value="@Model.Category" required />
+    <label>Unit Price:</label>
+    <input type="number" step="0.01" name="UnitPrice" value="@Model.UnitPrice" required />
+    <label>Units In Stock:</label>
+    <input type="number" name="UnitsInStock" value="@Model.UnitsInStock" required />
+    <button type="submit">Save</button>
+</form>

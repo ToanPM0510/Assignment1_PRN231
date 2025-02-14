@@ -1,0 +1,32 @@
+﻿@model List<eStoreClient.Models.Order>
+
+<h1>Orders</h1>
+<a href="/Order/Create">Create New Order</a>
+<table>
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Member ID</th>
+            <th>Order Date</th>
+            <th>Shipped Date</th>
+            <th>Freight</th>
+            <th>Actions</th>
+            >
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.MemberId</td>
+                <td>@order.OrderDate.ToShortDateString()</td>
+                <td>@(order.ShippedDate.HasValue ? order.ShippedDate.Value.ToShortDateString() : "N/A")</td>
+                <td>@order.Freight</td>
+                <td>
+                    <a href="/Order/Edit/@order.OrderId">Edit</a> |
+                    <a href="/Order/Delete/@order.OrderId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

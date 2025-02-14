@@ -1,0 +1,15 @@
+﻿@model eStoreClient.Models.Order
+
+<h1>Edit Order</h1>
+<form method="post">
+    <input type="hidden" name="OrderId" value="@Model.OrderId" />
+    <label>Member ID:</label>
+    <input type="number" name="MemberId" value="@Model.MemberId" required />
+    <label>Order Date:</label>
+    <input type="date" name="OrderDate" value="@Model.OrderDate.ToString("yyyy-MM-dd")" required />
+    <label>Shipped Date:</label>
+    <input type="date" name="ShippedDate" value="@(Model.ShippedDate.HasValue ? Model.ShippedDate.Value.ToString("yyyy-MM-dd") : "")" />
+    <label>Freight:</label>
+    <input type="number" step="0.01" name="Freight" value="@Model.Freight" required />
+    <button type="submit">Save</button>
+</form>

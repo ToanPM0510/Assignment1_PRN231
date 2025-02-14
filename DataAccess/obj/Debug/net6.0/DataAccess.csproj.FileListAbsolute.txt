@@ -1,0 +1,17 @@
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\bin\Debug\net6.0\DataAccess.dll
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\DataAccess.dll
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\bin\Debug\net6.0\DataAccess.runtimeconfig.json
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\bin\Debug\net6.0\BusinessObject.dll
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\bin\Debug\net6.0\BusinessObject.pdb
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\DataAccess.csproj.Up2Date
+D:\21_01_2025___PRN231_AS1\Assignment01Solution_HE171369\DataAccess\obj\Debug\net6.0\DataAccess.genruntimeconfig.cache

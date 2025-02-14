@@ -1,0 +1,15 @@
+﻿@model eStoreClient.Models.OrderDetail
+
+<h1>Add Order Detail</h1>
+<form method="post">
+    <input type="hidden" name="OrderId" value="@ViewBag.OrderId" />
+    <label>Product ID:</label>
+    <input type="number" name="ProductId" required />
+    <label>Quantity:</label>
+    <input type="number" name="Quantity" required />
+    <label>Unit Price:</label>
+    <input type="number" step="0.01" name="UnitPrice" required />
+    <label>Discount:</label>
+    <input type="number" step="0.01" name="Discount" required />
+    <button type="submit">Add</button>
+</form>

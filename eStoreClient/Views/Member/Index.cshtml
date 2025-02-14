@@ -1,0 +1,30 @@
+﻿@model List<eStoreClient.Models.Member>
+
+<h1>Members</h1>
+<a href="/Member/Create">Create New Member</a>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Full Name</th>
+            <th>Birthday</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var member in Model)
+        {
+            <tr>
+                <td>@member.MemberId</td>
+                <td>@member.Email</td>
+                <td>@member.FullName</td>
+                <td>@member.Birthday.ToShortDateString()</td>
+                <td>
+                    <a href="/Member/Edit/@member.MemberId">Edit</a> |
+                    <a href="/Member/Delete/@member.MemberId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

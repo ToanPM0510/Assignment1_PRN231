@@ -1,0 +1,15 @@
+﻿@model eStoreClient.Models.Order
+
+<h1>Delete Order</h1>
+<p>Are you sure you want to delete this order?</p>
+<ul>
+    <li><strong>Order ID:</strong> @Model.OrderId</li>
+    <li><strong>Member ID:</strong> @Model.MemberId</li>
+    <li><strong>Order Date:</strong> @Model.OrderDate.ToShortDateString()</li>
+    <li><strong>Shipped Date:</strong> @(Model.ShippedDate.HasValue ? Model.ShippedDate.Value.ToShortDateString() : "N/A")</li>
+    <li><strong>Freight:</strong> @Model.Freight</li>
+</ul>
+<form method="post" action="/Order/Delete/@Model.OrderId">
+    <button type="submit">Delete</button>
+    <a href="/Order">Cancel</a>
+</form>

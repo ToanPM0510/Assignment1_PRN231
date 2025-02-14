@@ -1,0 +1,30 @@
+﻿@model List<eStoreClient.Models.OrderDetail>
+
+<h1>Order Details for Order ID: @ViewBag.OrderId</h1>
+<a href="/OrderDetail/Create?orderId=@ViewBag.OrderId">Add New Order Detail</a>
+<table>
+    <thead>
+        <tr>
+            <th>Product ID</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Discount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var detail in Model)
+        {
+            <tr>
+                <td>@detail.ProductId</td>
+                <td>@detail.Quantity</td>
+                <td>@detail.UnitPrice</td>
+                <td>@detail.Discount</td>
+                <td>
+                    <a href="/OrderDetail/Edit?orderId=@detail.OrderId&productId=@detail.ProductId">Edit</a> |
+                    <a href="/OrderDetail/Delete?orderId=@detail.OrderId&productId=@detail.ProductId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

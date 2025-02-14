@@ -1,0 +1,32 @@
+﻿@model List<eStoreClient.Models.Product>
+
+<h1>Products</h1>
+<a href="/Product/Create">Create New Product</a>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Unit Price</th>
+            <th>Units In Stock</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+                <tr>
+                    <td>@product.ProductId</td>
+                    <td>@product.ProductName</td>
+                    <td>@product.Category</td>
+                    <td>@product.UnitPrice</td>
+                    <td>@product.UnitsInStock</td>
+                    <td>
+                        <a href="/Product/Edit/@product.ProductId">Edit</a> |
+                        <a href="/Product/Delete/@product.ProductId">Delete</a>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>

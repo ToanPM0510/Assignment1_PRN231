@@ -1,30 +1,31 @@
-﻿@model List<eStoreClient.Models.Order>
+﻿@model List<BusinessObject.Models.Order>
 
 <h1>Orders</h1>
-<a href="/Order/Create">Create New Order</a>
-<table>
+<a asp-controller="Order" asp-action="Create" class="btn btn-primary">Create New Order</a>
+
+<table class="table">
     <thead>
         <tr>
-            <th>Order ID</th>
-            <th>Member ID</th>
+            <th>ID</th>
             <th>Order Date</th>
+            <th>Required Date</th>
             <th>Shipped Date</th>
             <th>Freight</th>
             <th>Actions</th>
-            >
+        </tr>
     </thead>
     <tbody>
         @foreach (var order in Model)
         {
             <tr>
                 <td>@order.OrderId</td>
-                <td>@order.MemberId</td>
-                <td>@order.OrderDate.ToShortDateString()</td>
-                <td>@(order.ShippedDate.HasValue ? order.ShippedDate.Value.ToShortDateString() : "N/A")</td>
+                <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
+                
+                <td>@order.ShippedDate?.ToString("yyyy-MM-dd")</td>
                 <td>@order.Freight</td>
                 <td>
-                    <a href="/Order/Edit/@order.OrderId">Edit</a> |
-                    <a href="/Order/Delete/@order.OrderId">Delete</a>
+                    <a asp-controller="Order" asp-action="Edit" asp-route-id="@order.OrderId">Edit</a> |
+                    <a asp-controller="Order" asp-action="Delete" asp-route-id="@order.OrderId">Delete</a>
                 </td>
             </tr>
         }

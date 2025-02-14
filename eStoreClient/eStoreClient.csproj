@@ -12,4 +12,8 @@
     <ProjectReference Include="..\eStore\eStore.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\OrderDetail\" />
+  </ItemGroup>
+
 </Project>

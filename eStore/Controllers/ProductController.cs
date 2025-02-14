@@ -8,12 +8,12 @@ namespace eStore.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ProductController : ControllerBase
+    public class ProductsController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public ProductController(IUnitOfWork unitOfWork, IMapper mapper)
+        public ProductsController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
@@ -40,23 +40,28 @@ namespace eStore.Controllers
         [HttpPost]
         public IActionResult Create(ProductDTO productDTO)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var product = _mapper.Map<Product>(productDTO);
             _unitOfWork.Products.Add(product);
             _unitOfWork.Save();
+
             return CreatedAtAction(nameof(GetById), new { id = product.ProductId }, productDTO);
         }
 
         [HttpPut("{id}")]
         public IActionResult Update(int id, ProductDTO productDTO)
         {
-            if (id != productDTO.ProductId) return BadRequest();
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            var product = _unitOfWork.Products.GetById(id);
-            if (product == null) return NotFound();
+            var existingProduct = _unitOfWork.Products.GetById(id);
+            if (existingProduct == null) return NotFound();
 
-            _mapper.Map(productDTO, product);
-            _unitOfWork.Products.Update(product);
+            _mapper.Map(productDTO, existingProduct);
             _unitOfWork.Save();
+
             return NoContent();
         }
 
@@ -68,6 +73,7 @@ namespace eStore.Controllers
 
             _unitOfWork.Products.Delete(product);
             _unitOfWork.Save();
+
             return NoContent();
         }
     }

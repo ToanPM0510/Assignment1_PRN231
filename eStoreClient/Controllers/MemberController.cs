@@ -1,4 +1,4 @@
-﻿using eStoreClient.Models;
+﻿using BusinessObject.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Text.Json;
@@ -17,7 +17,7 @@ namespace eStoreClient.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient("eStore");
-            var response = await client.GetAsync("Members");
+            var response = await client.GetAsync("members");
 
             if (response.IsSuccessStatusCode)
             {
@@ -40,21 +40,28 @@ namespace eStoreClient.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Member member)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(member);
+            }
+
             var client = _httpClientFactory.CreateClient("eStore");
-            var response = await client.PostAsJsonAsync("Members", member);
+            var response = await client.PostAsJsonAsync("members", member);
 
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction(nameof(Index));
             }
 
+            var errorContent = await response.Content.ReadAsStringAsync();
+            ModelState.AddModelError("", $"Failed to create member: {errorContent}");
             return View(member);
         }
 
         public async Task<IActionResult> Edit(int id)
         {
             var client = _httpClientFactory.CreateClient("eStore");
-            var response = await client.GetAsync($"Members/{id}");
+            var response = await client.GetAsync($"members/{id}");
 
             if (response.IsSuccessStatusCode)
             {
@@ -72,21 +79,28 @@ namespace eStoreClient.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(Member member)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(member);
+            }
+
             var client = _httpClientFactory.CreateClient("eStore");
-            var response = await client.PutAsJsonAsync($"Members/{member.MemberId}", member);
+            var response = await client.PutAsJsonAsync($"members/{member.MemberId}", member);
 
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToAction(nameof(Index));
             }
 
+            var errorContent = await response.Content.ReadAsStringAsync();
+            ModelState.AddModelError("", $"Failed to update member: {errorContent}");
             return View(member);
         }
 
         public async Task<IActionResult> Delete(int id)
         {
             var client = _httpClientFactory.CreateClient("eStore");
-            var response = await client.DeleteAsync($"Members/{id}");
+            var response = await client.DeleteAsync($"members/{id}");
 
             if (response.IsSuccessStatusCode)
             {

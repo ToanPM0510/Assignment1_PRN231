@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Text.Json;
-
+using BusinessObject.Models;
 namespace eStoreClient.Controllers
 {
     public class OrderDetailController : Controller

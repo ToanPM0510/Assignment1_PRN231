@@ -849,6 +849,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36"
         },
         "compile": {
@@ -880,6 +881,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "BusinessObject": "1.0.0",
           "DataAccess": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -2491,11 +2493,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\eStoreClient.csproj",
+      "projectUniqueName": "D:\\dev\\personal\\Assignment01Solution_HE171369\\eStoreClient\\eStoreClient.csproj",
       "projectName": "eStoreClient",
-      "projectPath": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\eStoreClient.csproj",
+      "projectPath": "D:\\dev\\personal\\Assignment01Solution_HE171369\\eStoreClient\\eStoreClient.csproj",
       "packagesPath": "C:\\Users\\soulk\\.nuget\\packages\\",
-      "outputPath": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\obj\\",
+      "outputPath": "D:\\dev\\personal\\Assignment01Solution_HE171369\\eStoreClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\soulk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2513,14 +2515,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj"
+            "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj"
             },
-            "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\DataAccess\\DataAccess.csproj"
+            "D:\\dev\\personal\\Assignment01Solution_HE171369\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "D:\\dev\\personal\\Assignment01Solution_HE171369\\DataAccess\\DataAccess.csproj"
             },
-            "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStore\\eStore.csproj": {
-              "projectPath": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStore\\eStore.csproj"
+            "D:\\dev\\personal\\Assignment01Solution_HE171369\\eStore\\eStore.csproj": {
+              "projectPath": "D:\\dev\\personal\\Assignment01Solution_HE171369\\eStore\\eStore.csproj"
             }
           }
         }

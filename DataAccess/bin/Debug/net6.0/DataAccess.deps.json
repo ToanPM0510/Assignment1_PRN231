@@ -501,6 +501,7 @@
       },
       "BusinessObject/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36"
         },
         "runtime": {

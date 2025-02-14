@@ -11,6 +11,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
           "BusinessObject": "1.0.0",
           "DataAccess": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.Design": "6.0.36",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.36",
@@ -567,6 +568,7 @@
       },
       "BusinessObject/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.36",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36"
         },
         "runtime": {

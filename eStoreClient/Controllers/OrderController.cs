@@ -1,6 +1,5 @@
-﻿using eStoreClient.Models;
+﻿using BusinessObject.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Net.Http;
 using System.Text.Json;
 
 namespace eStoreClient.Controllers
@@ -17,7 +16,7 @@ namespace eStoreClient.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient("eStore");
-            var response = await client.GetAsync("Order");
+            var response = await client.GetAsync("orders");
 
             if (response.IsSuccessStatusCode)
             {
@@ -40,21 +39,23 @@ namespace eStoreClient.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Order order)
         {
+            if (!ModelState.IsValid)
+                return View(order);
+
             var client = _httpClientFactory.CreateClient("eStore");
-            var response = await client.PostAsJsonAsync("Order", order);
+            var response = await client.PostAsJsonAsync("orders", order);
 
             if (response.IsSuccessStatusCode)
-            {
                 return RedirectToAction(nameof(Index));
-            }
 
+            ModelState.AddModelError("", "Failed to create order");
             return View(order);
         }
 
         public async Task<IActionResult> Edit(int id)
         {
             var client = _httpClientFactory.CreateClient("eStore");
-            var response = await client.GetAsync($"Order/{id}");
+            var response = await client.GetAsync($"orders/{id}");
 
             if (response.IsSuccessStatusCode)
             {
@@ -72,28 +73,25 @@ namespace eStoreClient.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(Order order)
         {
+            if (!ModelState.IsValid)
+                return View(order);
+
             var client = _httpClientFactory.CreateClient("eStore");
-            var response = await client.PutAsJsonAsync($"Order/{order.OrderId}", order);
+            var response = await client.PutAsJsonAsync($"orders/{order.OrderId}", order);
 
             if (response.IsSuccessStatusCode)
-            {
                 return RedirectToAction(nameof(Index));
-            }
 
+            ModelState.AddModelError("", "Failed to update order");
             return View(order);
         }
 
         public async Task<IActionResult> Delete(int id)
         {
             var client = _httpClientFactory.CreateClient("eStore");
-            var response = await client.DeleteAsync($"Order/{id}");
+            var response = await client.DeleteAsync($"orders/{id}");
 
-            if (response.IsSuccessStatusCode)
-            {
-                return RedirectToAction(nameof(Index));
-            }
-
-            return NotFound();
+            return RedirectToAction(nameof(Index));
         }
     }
 }

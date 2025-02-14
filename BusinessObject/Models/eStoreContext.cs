@@ -26,9 +26,7 @@ namespace BusinessObject.Models
                 {
                     MemberId = 1,
                     Email = "admin@estore.com",
-                    Password = "admin@@",
-                    FullName = "Administrator",
-                    Birthday = DateTime.Now
+                    Password = "admin@@"
                 }
             );
         }

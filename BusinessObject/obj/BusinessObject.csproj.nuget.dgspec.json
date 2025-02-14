@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj": {}
+    "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj": {}
   },
   "projects": {
-    "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj": {
+    "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj",
+        "projectPath": "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\BusinessObject.csproj",
         "packagesPath": "C:\\Users\\soulk\\.nuget\\packages\\",
-        "outputPath": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\BusinessObject\\obj\\",
+        "outputPath": "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\soulk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.36, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

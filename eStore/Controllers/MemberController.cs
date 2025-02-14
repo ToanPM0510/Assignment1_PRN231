@@ -40,10 +40,42 @@ namespace eStore.Controllers
         [HttpPost]
         public IActionResult Create(MemberDTO memberDTO)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var member = _mapper.Map<Member>(memberDTO);
             _unitOfWork.Members.Add(member);
             _unitOfWork.Save();
             return CreatedAtAction(nameof(GetById), new { id = member.MemberId }, memberDTO);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, MemberDTO memberDTO)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var existingMember = _unitOfWork.Members.GetById(id);
+            if (existingMember == null) return NotFound();
+
+            _mapper.Map(memberDTO, existingMember);
+            _unitOfWork.Save();
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var member = _unitOfWork.Members.GetById(id);
+            if (member == null) return NotFound();
+
+            _unitOfWork.Members.Delete(member);
+            _unitOfWork.Save();
+            return NoContent();
         }
     }
 }

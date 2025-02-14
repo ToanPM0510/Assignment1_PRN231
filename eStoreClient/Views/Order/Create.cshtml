@@ -1,21 +1,38 @@
-﻿@model eStoreClient.Models.Order
+﻿@model BusinessObject.Models.Member
 
-<h1>Create Order</h1>
-<form method="post">
-    <label>Member ID:</label>
-    <input type="number" name="MemberId" required />
+<h2>Create Member</h2>
 
-    <label>Order Date:</label>
-    <input type="date" name="OrderDate" value="@DateTime.Now.ToString("yyyy-MM-dd")" required />
-
-    <label>Shipped Date:</label>
-    <input type="date" name="ShippedDate" />
-
-    <label>Freight:</label>
-    <input type="number" step="0.01" name="Freight" value="0.00" required />
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
 
     <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
-        <a href="/Order" class="btn btn-secondary">Back to List</a>
+        <label asp-for="Password">Password</label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
     </div>
+
+    <div class="form-group">
+        <label asp-for="CompanyName">Company Name</label>
+        <input asp-for="CompanyName" class="form-control" />
+        <span asp-validation-for="CompanyName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="City">City</label>
+        <input asp-for="City" class="form-control" />
+        <span asp-validation-for="City" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Country">Country</label>
+        <input asp-for="Country" class="form-control" />
+        <span asp-validation-for="Country" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 </form>

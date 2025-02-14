@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "05FcpEFHq/A=",
+  "dgSpecHash": "zN+om9cEKMo=",
   "success": true,
-  "projectFilePath": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "D:\\dev\\personal\\Assignment01Solution_HE171369\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soulk\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\soulk\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

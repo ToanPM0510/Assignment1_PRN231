@@ -1,14 +1,15 @@
-﻿@model List<eStoreClient.Models.Member>
+﻿@model List<BusinessObject.Models.Member>
 
 <h1>Members</h1>
-<a href="/Member/Create">Create New Member</a>
-<table>
+<a asp-controller="Member" asp-action="Create" class="btn btn-primary">Create New Member</a>
+<table class="table">
     <thead>
         <tr>
             <th>ID</th>
             <th>Email</th>
-            <th>Full Name</th>
-            <th>Birthday</th>
+            <th>Company Name</th>
+            <th>City</th>
+            <th>Country</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -18,11 +19,12 @@
             <tr>
                 <td>@member.MemberId</td>
                 <td>@member.Email</td>
-                <td>@member.FullName</td>
-                <td>@member.Birthday.ToShortDateString()</td>
+                <td>@member.CompanyName</td>
+                <td>@member.City</td>
+                <td>@member.Country</td>
                 <td>
-                    <a href="/Member/Edit/@member.MemberId">Edit</a> |
-                    <a href="/Member/Delete/@member.MemberId">Delete</a>
+                    <a asp-controller="Member" asp-action="Edit" asp-route-id="@member.MemberId">Edit</a> |
+                    <a asp-controller="Member" asp-action="Delete" asp-route-id="@member.MemberId">Delete</a>
                 </td>
             </tr>
         }

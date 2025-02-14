@@ -1,54 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\",
+  "WorkspaceRootPath": "D:\\dev\\personal\\Assignment01Solution_HE171369\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estoreclient\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\dev\\personal\\assignment01solution_he171369\\estoreclient\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estoreclient\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{023C9532-A975-4846-9CAA-23F449663FA5}|BusinessObject\\BusinessObject.csproj|d:\\dev\\personal\\assignment01solution_he171369\\businessobject\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023C9532-A975-4846-9CAA-23F449663FA5}|BusinessObject\\BusinessObject.csproj|solutionrelative:businessobject\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estoreclient\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\controllers\\orderdetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{023C9532-A975-4846-9CAA-23F449663FA5}|BusinessObject\\BusinessObject.csproj|d:\\dev\\personal\\assignment01solution_he171369\\businessobject\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023C9532-A975-4846-9CAA-23F449663FA5}|BusinessObject\\BusinessObject.csproj|solutionrelative:businessobject\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estoreclient\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estoreclient\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estoreclient\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estoreclient\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estoreclient\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\views\\member\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estoreclient\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estoreclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D47A55D2-5E31-4741-BA22-7128810FAC9A}|eStoreClient\\eStoreClient.csproj|solutionrelative:estoreclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7682382D-20E1-418B-83CA-0D98AF41D9ED}|eStore\\eStore.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7682382D-20E1-418B-83CA-0D98AF41D9ED}|eStore\\eStore.csproj|solutionrelative:estore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7682382D-20E1-418B-83CA-0D98AF41D9ED}|eStore\\eStore.csproj|d:\\21_01_2025___prn231_as1\\assignment01solution_he171369\\estore\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7682382D-20E1-418B-83CA-0D98AF41D9ED}|eStore\\eStore.csproj|solutionrelative:estore\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{023C9532-A975-4846-9CAA-23F449663FA5}|BusinessObject\\BusinessObject.csproj|d:\\dev\\personal\\assignment01solution_he171369\\businessobject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{023C9532-A975-4846-9CAA-23F449663FA5}|BusinessObject\\BusinessObject.csproj|solutionrelative:businessobject\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 216,
-          "SelectedChildIndex": 65,
+          "SelectedChildIndex": 66,
           "Children": [
             {
               "$type": "Bookmark",
@@ -322,158 +290,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "eStoreClient\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "eStoreClient\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\Models\\Order.cs",
+              "ToolTip": "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\Models\\Order.cs",
+              "RelativeToolTip": "BusinessObject\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:32:16.029Z",
+              "WhenOpened": "2025-02-14T15:21:54.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "eStoreClient\\Models\\Product.cs",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Models\\Product.cs",
-              "RelativeToolTip": "eStoreClient\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:32:11.429Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\dev\\personal\\Assignment01Solution_HE171369\\eStoreClient\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "eStoreClient\\Views\\Order\\Index.cshtml",
+              "ToolTip": "D:\\dev\\personal\\Assignment01Solution_HE171369\\eStoreClient\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "eStoreClient\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-14T15:21:36.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "eStoreClient\\Controllers\\OrderController.cs",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "eStoreClient\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\Models\\Product.cs",
+              "ToolTip": "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\Models\\Product.cs",
+              "RelativeToolTip": "BusinessObject\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:31:37.499Z",
+              "WhenOpened": "2025-02-14T15:16:21.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "OrderDetailController.cs",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Controllers\\OrderDetailController.cs",
-              "RelativeDocumentMoniker": "eStoreClient\\Controllers\\OrderDetailController.cs",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Controllers\\OrderDetailController.cs",
-              "RelativeToolTip": "eStoreClient\\Controllers\\OrderDetailController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAABPAAAAAAAAAA==",
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\DTOs\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\DTOs\\ProductDTO.cs",
+              "ToolTip": "D:\\dev\\personal\\Assignment01Solution_HE171369\\BusinessObject\\DTOs\\ProductDTO.cs",
+              "RelativeToolTip": "BusinessObject\\DTOs\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:31:36.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Views\\Member\\Index.cshtml",
-              "RelativeDocumentMoniker": "eStoreClient\\Views\\Member\\Index.cshtml",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Views\\Member\\Index.cshtml",
-              "RelativeToolTip": "eStoreClient\\Views\\Member\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-14T13:28:57.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\appsettings.json",
-              "RelativeDocumentMoniker": "eStoreClient\\appsettings.json",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\appsettings.json",
-              "RelativeToolTip": "eStoreClient\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-14T13:22:42.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "eStoreClient\\appsettings.Development.json",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\appsettings.Development.json",
-              "RelativeToolTip": "eStoreClient\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-14T13:22:41.891Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Program.cs",
-              "RelativeDocumentMoniker": "eStoreClient\\Program.cs",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Program.cs",
-              "RelativeToolTip": "eStoreClient\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:22:23.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStore\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "eStore\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStore\\Properties\\launchSettings.json",
-              "RelativeToolTip": "eStore\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-14T13:21:26.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStore\\Program.cs",
-              "RelativeDocumentMoniker": "eStore\\Program.cs",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStore\\Program.cs",
-              "RelativeToolTip": "eStore\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:19:37.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MemberController.cs",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Controllers\\MemberController.cs",
-              "RelativeDocumentMoniker": "eStoreClient\\Controllers\\MemberController.cs",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Controllers\\MemberController.cs",
-              "RelativeToolTip": "eStoreClient\\Controllers\\MemberController.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAowFgAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:17:16.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Member.cs",
-              "DocumentMoniker": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Models\\Member.cs",
-              "RelativeDocumentMoniker": "eStoreClient\\Models\\Member.cs",
-              "ToolTip": "D:\\21_01_2025___PRN231_AS1\\Assignment01Solution_HE171369\\eStoreClient\\Models\\Member.cs",
-              "RelativeToolTip": "eStoreClient\\Models\\Member.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T13:17:13.771Z",
+              "WhenOpened": "2025-02-14T15:16:20.707Z",
               "EditorCaption": ""
             }
           ]

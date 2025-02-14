@@ -8,12 +8,12 @@ namespace eStore.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class OrderController : ControllerBase
+    public class OrdersController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public OrderController(IUnitOfWork unitOfWork, IMapper mapper)
+        public OrdersController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
@@ -40,23 +40,28 @@ namespace eStore.Controllers
         [HttpPost]
         public IActionResult Create(OrderDTO orderDTO)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var order = _mapper.Map<Order>(orderDTO);
             _unitOfWork.Orders.Add(order);
             _unitOfWork.Save();
+
             return CreatedAtAction(nameof(GetById), new { id = order.OrderId }, orderDTO);
         }
 
         [HttpPut("{id}")]
         public IActionResult Update(int id, OrderDTO orderDTO)
         {
-            if (id != orderDTO.OrderId) return BadRequest();
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            var order = _unitOfWork.Orders.GetById(id);
-            if (order == null) return NotFound();
+            var existingOrder = _unitOfWork.Orders.GetById(id);
+            if (existingOrder == null) return NotFound();
 
-            _mapper.Map(orderDTO, order);
-            _unitOfWork.Orders.Update(order);
+            _mapper.Map(orderDTO, existingOrder);
             _unitOfWork.Save();
+
             return NoContent();
         }
 
@@ -68,6 +73,7 @@ namespace eStore.Controllers
 
             _unitOfWork.Orders.Delete(order);
             _unitOfWork.Save();
+
             return NoContent();
         }
     }

@@ -1,15 +1,34 @@
-﻿@model eStoreClient.Models.Product
+﻿@model BusinessObject.Models.Product
 
-<h1>Edit Product</h1>
-<form method="post">
-    <input type="hidden" name="ProductId" value="@Model.ProductId" />
-    <label>Product Name:</label>
-    <input type="text" name="ProductName" value="@Model.ProductName" required />
-    <label>Category:</label>
-    <input type="text" name="Category" value="@Model.Category" required />
-    <label>Unit Price:</label>
-    <input type="number" step="0.01" name="UnitPrice" value="@Model.UnitPrice" required />
-    <label>Units In Stock:</label>
-    <input type="number" name="UnitsInStock" value="@Model.UnitsInStock" required />
-    <button type="submit">Save</button>
+<h2>Edit Product</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ProductId" />
+
+    <div class="form-group">
+        <label asp-for="ProductName">Product Name</label>
+        <input asp-for="ProductName" class="form-control" />
+        <span asp-validation-for="ProductName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Category">Category</label>
+        <input asp-for="Category" class="form-control" />
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UnitPrice">Price</label>
+        <input asp-for="UnitPrice" type="number" class="form-control" />
+        <span asp-validation-for="UnitPrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UnitsInStock">Stock</label>
+        <input asp-for="UnitsInStock" type="number" class="form-control" />
+        <span asp-validation-for="UnitsInStock" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>
